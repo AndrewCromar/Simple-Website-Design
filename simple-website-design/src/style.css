@@ -1,0 +1,66 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #2e2e2e;
+  font-family: "Source Code Pro", monospace;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  width: 75vw;
+  margin-left: calc(25vw / 2);
+}
+
+.page-header,
+.page-nav-bar,
+.page-body,
+.page-footer {
+  background-color: #8a8a8a;
+  height: auto;
+  padding: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.page-header {
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.page-nav-bar {
+  border-radius: 25px;
+}
+
+.nav-bar-button {
+  background-color: #adadad;
+
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  transition-duration: 100ms;
+}
+
+.nav-bar-button:hover {
+  padding-top: 3px;
+  padding-bottom: 3px;
+
+  font-weight: bold;
+}
+
+.page-body {
+  border-radius: 25px;
+  flex-grow: 1;
+}
+
+.page-footer {
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+
+  margin-bottom: 0px;
+}
